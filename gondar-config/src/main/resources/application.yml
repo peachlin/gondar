@@ -1,0 +1,19 @@
+server:
+  port: 9201
+spring:
+  profiles:
+    active: native
+  application:
+    name: gondar-config
+  cloud:
+    config:
+      server:
+        health:
+          enabled:  false
+        native:
+          searchLocations: file:/var/lib/config
+          searchPaths: /
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
