@@ -11,6 +11,8 @@
     <module>gondar-registry</module>
     <module>gondar-config</module>
     <module>gondar-gateway</module>
+    <module>gondar-example</module>
+    <module>gondar-example2</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -39,6 +41,16 @@
         <version>Finchley.BUILD-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-zuul</artifactId>
+        <version>1.4.6.RELEASE</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-feign</artifactId>
+        <version>1.4.6.RELEASE</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

@@ -3,3 +3,5 @@
 gondar-config/target/
 gondar-gateway/target/
 gondar-registry/target/
+gondar-example/target/
+gondar-example2/target/
