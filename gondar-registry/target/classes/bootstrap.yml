@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: gondar-registry
-server:
-  port: 9000

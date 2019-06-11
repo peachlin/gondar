@@ -1,2 +1,5 @@
 .idea/
 *.iml
+gondar-config/target/
+gondar-gateway/target/
+gondar-registry/target/
