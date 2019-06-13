@@ -4,8 +4,10 @@ spring:
   application:
     name: gondar-registry
 eureka:
+  instance:
+    hostname: gondar-registry
   client:
+    service-url:
+      defaultZone: http://127.0.0.1:9200/eureka/
     register-with-eureka: false
     fetch-registry: false
-  server:
-    wait-time-in-ms-when-sync-empty: 0

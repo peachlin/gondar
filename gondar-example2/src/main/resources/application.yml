@@ -1,4 +1,11 @@
+server:
+  port: 9204
+spring:
+  application:
+    name: gondar-example2
 eureka:
+  instance:
+    hostname: gondar-example2
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
+      defaultZone: http://127.0.0.1:9200/eureka/

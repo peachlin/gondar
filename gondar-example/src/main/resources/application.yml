@@ -1,4 +1,18 @@
+server:
+  port: 9203
 eureka:
+  instance:
+    hostname: gondar-example
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
+      defaultZone: http://127.0.0.1:9200/eureka/
+spring:
+  application:
+    name: gondar-example
+  datasource:
+    url: jdbc:mysql://47.101.177.31:3306/zmsj?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
